@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  justify-content:center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-r {
+  background: gold;
+}
+
+@media all and (min-width: 600px) {
+  .aside-r { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; order: 1; }
+  .aside-r { order: 2; }
+  .footer  { order: 3; }
+}
+
+
+body {
+  padding: 2em;
+}

@@ -1,0 +1,19 @@
+.columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.box {
+  padding: 20px;
+  margin: 0px 1px;
+  border: 1px dotted green;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: #c3c3c3;
+}
